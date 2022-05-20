@@ -279,6 +279,12 @@ export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 # =======================================================
 clear
 
+go install github.com/jesseduffield/lazygit@latest
+wget https://github.com/neovim/neovim/releases/download/v0.7.0/nvim-linux64.deb
+apt remove -y neovim-runtime 
+apt install -y ./nvim-linux64.deb
+ln -s "/home/$(grep -F 1000:1000 /etc/passwd | cut -d: -f1)/go/bin/lazygit" /usr/bin/lazygit
+
 lolcat <<"EOF"
 
 
