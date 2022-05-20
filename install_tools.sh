@@ -247,6 +247,14 @@ apt-get update -y
 
 clear
 
+go install github.com/jesseduffield/lazygit@latest
+wget https://github.com/neovim/neovim/releases/download/v0.7.0/nvim-linux64.deb
+sudo apt install ./nvim-linux64.deb
+git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+nvim +PackerSync
+nvim +LspInstall gopls
+nvim +TSInstall go
+
 lolcat <<"EOF"
 
 

@@ -96,7 +96,7 @@ printf '\n▌│█║▌║▌║ Installing Packages ▌│█║▌║▌║\
 printf '\n-------------------------------------\n\n'
 
 apt-get install -y git gnupg2 wget tor ca-certificates lsb-release gem software-properties-common debian-keyring vim cargo geany gdebi gufw bleachbit iptables tmux libffi-dev build-essential binutils-dev docker.io konsole aptitude libunwind-dev unzip libssl-dev autoconf automake gcc libtool jq awscli npm graphviz golang
-apt-get install -y doona dotdotpwn linux-exploit-suggester oscanner siparmyknife xsser knockpy urlextractor pompem dirsearch
+apt-get install -y doona dotdotpwn linux-exploit-suggester oscanner siparmyknife xsser knockpy urlextractor pompem dirsearch ripgrep ncdu htop node
 
 printf '\n-------------Done--------------\n\n'
 
